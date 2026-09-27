@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ht">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ken Blioteks</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6fa;color:#172033}
+header,footer{background:#111827;color:white;text-align:center;padding:25px}
+nav{text-align:center;background:white;padding:14px}
+nav a{margin:0 10px;color:#111827;text-decoration:none;font-weight:bold}
+.hero{padding:55px 20px;text-align:center;background:#374151;color:white}
+main{max-width:900px;margin:auto;padding:25px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;padding:20px;border-radius:12px;box-shadow:0 4px 15px #0001}
+.btn{display:inline-block;background:#111827;color:white;padding:11px 16px;border-radius:8px;text-decoration:none;margin-top:12px}
+input,textarea{width:100%;padding:12px;margin:8px 0 15px;border:1px solid #ccc;border-radius:8px;box-sizing:border-box}
+button{background:#111827;color:white;border:0;padding:12px 18px;border-radius:8px}
+</style>
+</head>
+<body>
+<header><h1>Ken Blioteks</h1><p>Bibliyotèk dijital ou sou entènèt</p></header>
+<nav><a href="#akeyi">Akèy</a><a href="#liv">Liv</a><a href="#sou-nou">Sou nou</a><a href="#kontak">Kontak</a></nav>
+<section class="hero" id="akeyi"><h2>Byenveni sou Ken Blioteks</h2><p>Yon espas pou dekouvri, li ak jwenn resous dijital.</p><a class="btn" href="#liv">Dekouvri liv yo</a></section>
+<main>
+<section id="liv"><h2>📚 Liv yo</h2><div class="cards">
+<div class="card"><h3>Liv 1</h3><p>Espas pou ajoute premye liv la.</p></div>
+<div class="card"><h3>Liv 2</h3><p>Espas pou ajoute yon lòt liv.</p></div>
+<div class="card"><h3>Nouvo liv</h3><p>Plis liv kapab ajoute pita.</p></div>
+</div></section>
+<section id="sou-nou"><div class="card"><h2>Sou Ken Blioteks</h2><p>Ken Blioteks se yon pwojè bibliyotèk dijital. Platfòm nan kapab resevwa liv, videyo, kont itilizatè ak lòt sèvis.</p></div></section>
+<section id="kontak"><h2>📩 Kontakte nou</h2><div class="card">
+<label>Non</label><input id="non" placeholder="Non ou">
+<label>Email</label><input id="email" type="email" placeholder="Email ou">
+<label>Mesaj</label><textarea id="mesaj" rows="5" placeholder="Mesaj ou"></textarea>
+<button onclick="envoyer()">Voye mesaj</button><p id="msg"></p>
+</div></section>
+</main>
+<footer>© 2026 Ken Blioteks</footer>
+<script>
+function envoyer(){document.getElementById('msg').textContent='Mèsi! Fòm nan pare. Nou pral konekte sèvis mesaj ak peman pita.';}
+</script>
+</body>
+</html>
